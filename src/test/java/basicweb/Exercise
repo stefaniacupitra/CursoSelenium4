@@ -1,0 +1,12 @@
+http://letskodeit.teachable.com/pages/practice
+Find	the	price	of	the	course	“Python	Programming	Language”
+
+Rel XPATH
+    CONTAINS
+    //td[contains(text(),'30')]
+
+    PRECEDING SIBLING
+    //table[@id='product']//td[text()='Python Programming Language']//preceding-sibling::td
+
+    FOLLOWING SIBLING
+    //table[@id='product']//td[text()='Python Programming Language']//following-sibling::td
